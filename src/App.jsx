@@ -1,10 +1,11 @@
-// import Titulo from "./components/Titulo/Titulo.jsx";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
 	return (
 		<>
-			<h1>Hola</h1>
+			<Header />
+			{/* <Hero /> */}
 		</>
 	);
 }
