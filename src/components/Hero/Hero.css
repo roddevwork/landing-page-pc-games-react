@@ -1,0 +1,46 @@
+
+.home {  
+  .hero-image {
+    background-image: url(./hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .hero-image-opacity {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+
+      .hero-image-content {
+        .hero-image-title {
+          font-size: 7.5vw;
+          color: var(--white-color);
+          margin-bottom: 30px; 
+        }
+
+        .btn {
+          border-radius: 0.5rem;
+          padding: 1rem;
+        
+          display: inline-block;
+          width: 200px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          color: var(--white-color);
+          background-color: var( --bg-color-sedondary);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
