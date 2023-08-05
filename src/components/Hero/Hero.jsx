@@ -7,7 +7,7 @@ const Hero = () => {
 				<aside className="hero-image-opacity">
 					<div className="hero-image-content">
 						<h2 className="hero-image-title">
-							Bienvenidos<br></br> a tu sitio de Juegos
+							Bienvenido<br></br> a tu sitio de Juegos
 						</h2>
 						<a href="#contacto" className="btn">
 							PRODUCTOS

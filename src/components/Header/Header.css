@@ -52,7 +52,7 @@
 
 				&:hover {
 					color: var(--white-color);
-					background-color: var(--first-color);
+					background-color: transparent;
 				}
 			}
 		}

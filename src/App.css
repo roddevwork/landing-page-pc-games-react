@@ -1,7 +1,7 @@
 /* ********** Custom Properties ********** */
 :root {
   --first-color: rgb(255, 99, 71);
-  --bg-color-primary:rgb(51, 51, 51);
+  --bg-color-primary: rgb(51, 51, 51);
   --bg-color-sedondary: rgba(0,0,0,0.8);
   --black-color: rgb(0, 0, 0);
   --white-color: rgb(255, 255, 255);
@@ -15,6 +15,7 @@ html {
   box-sizing: border-box;
   font-family: var(--font-family) 
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,

@@ -32,8 +32,17 @@
           font-weight: bold;
           text-align: center;
           text-decoration: none;
-          color: var(--white-color);
           background-color: var( --bg-color-sedondary);
+          color: var(--white-color);
+          
+          
+          
+          
+          &:hover {
+            border: 1px solid  var(--white-color);
+         
+
+          }
         }
       }
     }
