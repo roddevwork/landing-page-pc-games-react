@@ -1,3 +1,4 @@
+import logo from "../../assets/img/logo.png";
 import "./Header.css";
 
 const Header = () => {
@@ -5,7 +6,8 @@ const Header = () => {
 		<header className="header">
 			<section className="container-menu">
 				<div className="logo">
-					<a href="#">LOGO</a>
+					<img src={logo} alt="logo" />
+					<p>PC GAMES</p>
 				</div>
 
 				<nav className="nav-menu">
