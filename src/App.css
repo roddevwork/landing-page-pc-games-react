@@ -29,9 +29,9 @@ html {
 
 body {
   width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--bg-color-primary);
 }
