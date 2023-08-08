@@ -36,10 +36,15 @@
 			cursor: pointer;
 			background-color: transparent;
 
+			& svg:first-child{
+				fill: transparent;
+			}
+
 			& svg {
 				width: 42px;
 				height: 42px;
 				fill: var(--first-color);
+				
 			}
     }
 
@@ -75,6 +80,20 @@
   .nav-menu  {
     display: none;
   }
+	
+}
+
+@media screen and (width >= 1024px) {
+	.btn-menu {
+		& svg:first-child{
+			display: block;
+		}
+
+		& svg:last-child{
+			display: none;
+		}
+		
+	}
 }
   
       

@@ -9,7 +9,7 @@ const Hero = () => {
 						<h2 className="hero-image-title">
 							Bienvenido<br></br> a tu sitio de Juegos
 						</h2>
-						<a href="#contacto" className="btn">
+						<a href="#productos" className="btn">
 							PRODUCTOS
 						</a>
 					</div>
