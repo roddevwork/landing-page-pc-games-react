@@ -1,5 +1,5 @@
-import logo from "../../assets/img/logo.png";
-import "./Header.css";
+import logo from "../../assets/img/logo.png"
+import "./Header.css"
 
 const Header = () => {
 	return (
@@ -59,7 +59,7 @@ const Header = () => {
 				</button>
 			</section>
 		</header>
-	);
-};
+	)
+}
 
-export default Header;
+export default Header
