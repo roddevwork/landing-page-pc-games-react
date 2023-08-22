@@ -1,8 +1,13 @@
-import { ProductsSection_Styled } from "./ProductsUsStyles.js"
+import {
+	ProductsSection_Styled,
+	AsideContainer_Styled,
+} from "./ProductsUsStyles.js"
 const ProductsUs = () => {
 	return (
 		<ProductsSection_Styled>
-			<h1>Products Section</h1>
+			<AsideContainer_Styled>
+				<h2>Products Section</h2>
+			</AsideContainer_Styled>
 		</ProductsSection_Styled>
 	)
 }

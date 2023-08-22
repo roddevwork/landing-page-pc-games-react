@@ -2,8 +2,8 @@ import logo from "../../assets/img/logo.png"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-	faBars,
-	faTimes,
+	faBars as openIcon,
+	faTimes as closeIcon,
 	faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons"
 import { useMenu } from "../../context/MenuContext"
@@ -15,7 +15,6 @@ const Header = () => {
 	return (
 		<header className="header">
 			<section className="container-menu">
-				{/* Logo en un lado */}
 				<div className="logo">
 					<Link to="/Home">
 						<img src={logo} alt="logo" />
@@ -23,27 +22,25 @@ const Header = () => {
 					<p>PC GAMES</p>
 				</div>
 
-				{/* Menú de navegación en el otro lado */}
 				<nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
 					<Link to="/home">Inicio</Link>
 					<Link to="/products">Productos</Link>
 					<Link to="/about">Sobre Nosotros</Link>
 					<Link to="/contact">Contacto</Link>
-					{/* Icono de carrito */}
-					<div className="cart-icon">
+
+					<div className="shop-icon">
 						<FontAwesomeIcon icon={faShoppingCart} />
 					</div>
 				</nav>
 
-				{/* Botón para abrir/cerrar el menú desplegable */}
 				<button
 					className="btn-menu"
 					onClick={isMenuOpen ? closeMenu : openMenu}
 				>
 					{isMenuOpen ? (
-						<FontAwesomeIcon icon={faTimes} />
+						<FontAwesomeIcon icon={closeIcon} />
 					) : (
-						<FontAwesomeIcon icon={faBars} />
+						<FontAwesomeIcon icon={openIcon} />
 					)}
 				</button>
 			</section>
