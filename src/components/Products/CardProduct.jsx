@@ -1,4 +1,4 @@
-import { Cards, ContainerPrice } from "./ProductosStyles"
+import { Cards, ContainerPrice } from "./ProductsStyles"
 
 const CardProducto = ({ img, title, price, price_offer }) => {
 	return (

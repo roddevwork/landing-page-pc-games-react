@@ -1,4 +1,5 @@
-import "./Hero.css";
+import "./Hero.css"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
 	return (
@@ -9,14 +10,14 @@ const Hero = () => {
 						<h2 className="hero-image-title">
 							Bienvenido<br></br> a tu sitio de Juegos
 						</h2>
-						<a href="#productos" className="btn">
+						<Link to="/products" className="btn">
 							PRODUCTOS
-						</a>
+						</Link>
 					</div>
 				</aside>
 			</article>
 		</section>
-	);
-};
+	)
+}
 
-export default Hero;
+export default Hero

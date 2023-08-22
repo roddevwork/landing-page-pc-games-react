@@ -1,11 +1,11 @@
+import { products } from "../../data/productsFeatured"
+import CardProducto from "./CardProduct"
 import {
 	ContainerProducts,
 	ProductsSection,
 	TitleProductsSection,
 	ContainerCards,
-} from "./ProductosStyles"
-import { products } from "../../data/products"
-import CardProducto from "./CardProducto"
+} from "./ProductsStyles"
 
 const Productos = () => {
 	return (
