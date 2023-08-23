@@ -1,14 +1,23 @@
+import { products } from "../../data/productsAll.js"
 import {
-	ProductsSection_Styled,
-	AsideContainer_Styled,
-} from "./ProductsUsStyles.js"
+	ContainerCards,
+	ContainerProducts,
+	ProductsSection,
+	TitleProductsSection,
+} from "../../components/Products/ProductsStyles"
+import CardProducto from "./CardProduct.jsx"
 const ProductsUs = () => {
 	return (
-		<ProductsSection_Styled>
-			<AsideContainer_Styled>
-				<h2>Products Section</h2>
-			</AsideContainer_Styled>
-		</ProductsSection_Styled>
+		<ProductsSection>
+			<ContainerProducts>
+				<TitleProductsSection>Nuestros Juegos</TitleProductsSection>
+				<ContainerCards>
+					{products.map((card) => {
+						return <CardProducto key={card.id} {...card} />
+					})}
+				</ContainerCards>
+			</ContainerProducts>
+		</ProductsSection>
 	)
 }
 

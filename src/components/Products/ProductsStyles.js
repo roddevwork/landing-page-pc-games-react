@@ -4,6 +4,7 @@ export const ProductsSection = styled.section`
 	width: 100%;
 	min-height: 100vh;
 	background-color: var(--bg-color-primary);
+	margin-bottom: 30px;
 `
 
 export const ContainerProducts = styled.article`

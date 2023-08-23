@@ -56,38 +56,36 @@ export const Nav_NavMenu_Styled = styled.nav`
 		}
 	}
 
-	@media screen and (width <= 981px) {
-		&.active {
+	&.active {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--bg-color-sedondary);
+		opacity: 1;
+		position: absolute;
+		top: var(--header-height);
+		left: 0;
+		width: 100%;
+		padding: 0;
+		z-index: 1000;
+
+		.links-container {
 			display: flex;
 			flex-direction: column;
-			background-color: var(--bg-color-sedondary);
-			opacity: 1;
-			position: absolute;
-			top: var(--header-height);
-			left: 0;
-			width: 100%;
-			padding: 0;
-			z-index: 1000;
+			height: auto;
 
-			.links-container {
-				display: flex;
-				flex-direction: column;
-				height: auto;
-
-				& a {
-					font-size: 1.5rem;
-				}
+			& a {
+				font-size: 1.5rem;
 			}
-			.shop-icon {
-				text-align: center;
-				margin-bottom: 15px;
-				padding-top: 10px;
-				color: var(--first-color);
+		}
+		.shop-icon {
+			text-align: center;
+			margin-bottom: 15px;
+			padding-top: 10px;
+			color: var(--first-color);
 
-				& svg.svg-inline--fa {
-					width: 32px;
-					height: 32px;
-				}
+			& svg.svg-inline--fa {
+				width: 32px;
+				height: 32px;
 			}
 		}
 	}
@@ -96,6 +94,12 @@ export const Nav_NavMenu_Styled = styled.nav`
 		display: flex;
 		align-items: center;
 		gap: 20px;
+
+		.links-container {
+			&.active {
+				z-index: 0;
+			}
+		}
 
 		.shop-icon {
 			color: var(--first-color);
