@@ -114,6 +114,7 @@ export const Button_BtnMenu_Styles = styled.button`
 	cursor: pointer;
 	border: none;
 	text-align: end;
+	background-color: transparent;
 
 	&:hover {
 		background-color: transparent;
@@ -123,7 +124,8 @@ export const Button_BtnMenu_Styles = styled.button`
 		font-size: 32px;
 		color: var(--first-color);
 
-gits			color: var(--white-color);
+		&:hover {
+			color: var(--white-color);
 		}
 	}
 
