@@ -11,16 +11,19 @@ export function useMenu() {
 export function MenuProvider({ children }) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-	const openMenu = () => {
-		setIsMenuOpen(true)
-	}
+	// const openMenu = () => {
+	// 	setIsMenuOpen(true)
+	// }
 
-	const closeMenu = () => {
-		setIsMenuOpen(false)
+	// const closeMenu = () => {
+	// 	setIsMenuOpen(false)
+	// }
+	const toggleMenu = () => {
+		setIsMenuOpen((prevState) => !prevState)
 	}
 
 	return (
-		<MenuContext.Provider value={{ isMenuOpen, openMenu, closeMenu }}>
+		<MenuContext.Provider value={{ isMenuOpen, toggleMenu }}>
 			{children}
 		</MenuContext.Provider>
 	)

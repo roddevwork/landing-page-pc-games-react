@@ -7,44 +7,63 @@ import {
 	faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons"
 import { useMenu } from "../../context/MenuContext"
-import "./Header.css"
+import {
+	Button_BtnMenu_Styles,
+	Div_ContainerLogo_Styled,
+	Header_Styled,
+	Nav_NavMenu_Styled,
+	Section_ContainerMenu_Styled,
+} from "./HeaderStyles"
 
 const Header = () => {
-	const { isMenuOpen, openMenu, closeMenu } = useMenu()
+	const { isMenuOpen, toggleMenu } = useMenu()
+
+	const handleMenuClick = () => {
+		toggleMenu() // Toggling the menu state
+	}
 
 	return (
-		<header className="header">
-			<section className="container-menu">
-				<div className="logo">
+		<Header_Styled>
+			<Section_ContainerMenu_Styled>
+				<Div_ContainerLogo_Styled>
 					<Link to="/Home">
 						<img src={logo} alt="logo" />
 					</Link>
 					<p>PC GAMES</p>
-				</div>
+				</Div_ContainerLogo_Styled>
 
-				<nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-					<Link to="/home">Inicio</Link>
-					<Link to="/products">Productos</Link>
-					<Link to="/about">Sobre Nosotros</Link>
-					<Link to="/contact">Contacto</Link>
+				<Nav_NavMenu_Styled
+					className={`nav-menu ${isMenuOpen ? "active" : ""}`}
+				>
+					<div className="links-container">
+						<Link to="/home" onClick={handleMenuClick}>
+							Inicio
+						</Link>
+						<Link to="/products" onClick={handleMenuClick}>
+							Productos
+						</Link>
+						<Link to="/about" onClick={handleMenuClick}>
+							Sobre Nosotros
+						</Link>
+						<Link to="/contact" onClick={handleMenuClick}>
+							Contacto
+						</Link>
+					</div>
 
 					<div className="shop-icon">
 						<FontAwesomeIcon icon={faShoppingCart} />
 					</div>
-				</nav>
+				</Nav_NavMenu_Styled>
 
-				<button
-					className="btn-menu"
-					onClick={isMenuOpen ? closeMenu : openMenu}
-				>
+				<Button_BtnMenu_Styles onClick={handleMenuClick}>
 					{isMenuOpen ? (
 						<FontAwesomeIcon icon={closeIcon} />
 					) : (
 						<FontAwesomeIcon icon={openIcon} />
 					)}
-				</button>
-			</section>
-		</header>
+				</Button_BtnMenu_Styles>
+			</Section_ContainerMenu_Styled>
+		</Header_Styled>
 	)
 }
 
