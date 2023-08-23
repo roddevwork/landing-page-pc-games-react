@@ -1,0 +1,48 @@
+.contact-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group {
+	margin: 10px 0;
+	text-align: left;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-top: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+button {
+	border-radius: 0.5rem;
+	border: 1px solid transparent;
+	padding: 1rem;
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--bg-color-sedondary);
+	color: var(--white-color);
+}
+
+button:hover {
+	background-color: var(--first-color);
+}

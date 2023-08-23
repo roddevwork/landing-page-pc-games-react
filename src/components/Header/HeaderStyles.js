@@ -6,7 +6,7 @@ export const Header_Styled = styled.header`
 	left: 0;
 	width: 100%;
 	height: var(--header-height);
-	padding: 1rem;
+	padding: 0.5rem;
 	z-index: 999;
 	color: rgb(234, 234, 234);
 	background-color: var(--bg-color-sedondary);
@@ -16,6 +16,7 @@ export const Section_ContainerMenu_Styled = styled.section`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	@media screen and (width >= 981px) {
 		display: flex;
 		justify-content: space-between;
@@ -109,17 +110,20 @@ export const Nav_NavMenu_Styled = styled.nav`
 `
 
 export const Button_BtnMenu_Styles = styled.button`
-	display: block;
+	display: inline-block;
 	cursor: pointer;
 	border: none;
-	background-color: transparent;
+	text-align: end;
+
+	&:hover {
+		background-color: transparent;
+	}
 
 	.svg-inline--fa {
 		font-size: 32px;
 		color: var(--first-color);
 
-		&:hover {
-			color: var(--white-color);
+gits			color: var(--white-color);
 		}
 	}
 
