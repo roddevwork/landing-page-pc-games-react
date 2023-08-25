@@ -29,11 +29,6 @@
 			gap: 10px;
 			padding: 5px 20px 10px 0px;
 
-			/* & li:first-child {
-				width: 60px;
-				height: 60px;
-			} */
-
 			& a {
 				filter: invert(1);
 			}

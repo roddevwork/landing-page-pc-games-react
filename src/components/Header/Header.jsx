@@ -1,11 +1,12 @@
 import logo from "../../assets/img/logo.png"
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-	faBars as openIcon,
-	faTimes as closeIcon,
-	faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons"
+	FaBars as OpenIcon,
+	FaTimes as CloseIcon,
+	FaShoppingCart as ShopIcon,
+} from "react-icons/fa"
+import { Link, NavLink } from "react-router-dom"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 import { useMenu } from "../../context/MenuContext"
 import {
 	Button_BtnMenu_Styles,
@@ -18,6 +19,9 @@ import {
 const Header = () => {
 	const { isMenuOpen, toggleMenu } = useMenu()
 
+	const activeStyle = {
+		color: "white",
+	}
 	const handleMenuClick = () => {
 		toggleMenu() // Toggling the menu state
 	}
@@ -36,31 +40,43 @@ const Header = () => {
 					className={`nav-menu ${isMenuOpen ? "active" : ""}`}
 				>
 					<div className="links-container">
-						<Link to="/home" onClick={handleMenuClick}>
+						<NavLink
+							to="/home"
+							onClick={handleMenuClick}
+							style={({ isActive }) => (isActive ? activeStyle : undefined)}
+						>
 							Inicio
-						</Link>
-						<Link to="/products" onClick={handleMenuClick}>
+						</NavLink>
+						<NavLink
+							to="/products"
+							onClick={handleMenuClick}
+							style={({ isActive }) => (isActive ? activeStyle : undefined)}
+						>
 							Productos
-						</Link>
-						<Link to="/about" onClick={handleMenuClick}>
+						</NavLink>
+						<NavLink
+							to="/about"
+							onClick={handleMenuClick}
+							style={({ isActive }) => (isActive ? activeStyle : undefined)}
+						>
 							Sobre Nosotros
-						</Link>
-						<Link to="/contact" onClick={handleMenuClick}>
+						</NavLink>
+						<NavLink
+							to="/contact"
+							onClick={handleMenuClick}
+							style={({ isActive }) => (isActive ? activeStyle : undefined)}
+						>
 							Contacto
-						</Link>
+						</NavLink>
 					</div>
 
 					<div className="shop-icon">
-						<FontAwesomeIcon icon={faShoppingCart} />
+						<ShopIcon />
 					</div>
 				</Nav_NavMenu_Styled>
 
 				<Button_BtnMenu_Styles onClick={handleMenuClick}>
-					{isMenuOpen ? (
-						<FontAwesomeIcon icon={closeIcon} />
-					) : (
-						<FontAwesomeIcon icon={openIcon} />
-					)}
+					{isMenuOpen ? <CloseIcon /> : <OpenIcon />}
 				</Button_BtnMenu_Styles>
 			</Section_ContainerMenu_Styled>
 		</Header_Styled>

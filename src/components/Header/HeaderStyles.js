@@ -16,6 +16,7 @@ export const Section_ContainerMenu_Styled = styled.section`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 10px;
 
 	@media screen and (width >= 981px) {
 		display: flex;
@@ -46,7 +47,7 @@ export const Nav_NavMenu_Styled = styled.nav`
 		& a {
 			padding: 10px;
 			text-align: center;
-			font-size: 1rem;
+			font-size: 1.2rem;
 			font-weight: bold;
 			transition: color 0.3s, background-color 0.3s;
 			color: var(--first-color);
@@ -85,7 +86,7 @@ export const Nav_NavMenu_Styled = styled.nav`
 				padding-top: 10px;
 				color: var(--first-color);
 
-				& svg.svg-inline--fa {
+				& svg {
 					width: 32px;
 					height: 32px;
 				}
@@ -96,12 +97,13 @@ export const Nav_NavMenu_Styled = styled.nav`
 	@media screen and (width >= 981px) {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 20px;
 
 		.shop-icon {
 			color: var(--first-color);
 
-			& svg.svg-inline--fa {
+			& svg {
 				width: 32px;
 				height: 32px;
 			}
@@ -120,7 +122,7 @@ export const Button_BtnMenu_Styles = styled.button`
 		background-color: transparent;
 	}
 
-	.svg-inline--fa {
+	& svg {
 		font-size: 32px;
 		color: var(--first-color);
 

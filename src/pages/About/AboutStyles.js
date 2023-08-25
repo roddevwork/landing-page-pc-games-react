@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
 export const Section = styled.section`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	min-height: 100vh;
 	background-color: var(--bg-color-primary);
@@ -9,6 +13,7 @@ export const Section = styled.section`
 `
 export const Aside = styled.aside`
 	width: 90%;
+	max-width: 1200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,6 +21,15 @@ export const Aside = styled.aside`
 	gap: 30px;
 	padding: 30px;
 	margin: 0 auto;
+
+	& h2 {
+		font-size: 2rem;
+	}
+
+	& h3 {
+		font-size: 1.4rem;
+		align-self: self-start;
+	}
 
 	& p {
 		font-size: 1.3rem;

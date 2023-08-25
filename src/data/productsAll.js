@@ -137,7 +137,7 @@ export const products = [
 	{
 		id: 10,
 		title: "DIRT 5",
-		img: ForzaHorizonte,
+		img: Dirt5,
 		price: 999,
 		price_offer: 700,
 		editor: "Codemasters",
