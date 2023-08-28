@@ -1,14 +1,22 @@
-# E2: Context y React Router | React JS
+# E3: Lógica de productos y carrito - Redux Toolkit | React JS
 
-## En esta entrega iteraremos sobre la realizado en la entrega Nº1:
+## En esta tercera entrega, trabajaremos sobre la lógica de productos y carrito de nuestra página web. Deberán:
 
-- 👉 Ahora sí, utilizando context, haremos funcional el menú desplegable del header en responsive.
-- 👉 Deberán crear una página de "About" , "Sobre nosotros" o de caracter similar a estas.
-- 👉 Deberán crear una página de "productos" , por ahora sin funcionalidad, solo ir armando el maquetado de la misma, en preparación a la próxima entrega.
-- 👉 Deberán crear una página de contacto, en la cual tienen que tener al menos un formulario de contacto con los campos "nombre", "apellido" , "email" y "asunto" (por ahora, sin validaciones).
-- 👉 Todas las páginas (landing de la E1 incluida) deben estar vinculadas entre sí mediante el uso de React Router.
-- 👉 Las 3 páginas deben ser full responsive
-- 👉 Se debe deployar el proyecto en Vercel, formando parte de la página realizada en la E1.
+- 👉 Renderizar los productos de manera dinámica en la sección de productos que ya tenían lista de la entrega anterior.
+
+- 👉 Realizar la lógica de filtros.
+
+- 👉 Agregar productos al carrito de manera dinámica.
+
+- 👉 Manejar las cantidades del producto elegido en el carrito de manera dinámica.
+
+- 👉 Agregar una funcionalidad para borrar productos del carrito de manera individual o todos juntos de manera grupal.
+
+- 👉 Agregar funcionalidad de finalizar compra (Se debe vaciar el carrito)
+
+- 👉 Tanto el agregado de productos, el borrado de productos y el finalizado de la compra, deberán confirmarse mediante un modal (No pueden ser "alerts" ni "confirms").
+
+- 👉 El trabajo deberá entregarse deployado en Vercel, siguiendo la misma página de las entregas anteriores.
 
 ### Autor:
 
