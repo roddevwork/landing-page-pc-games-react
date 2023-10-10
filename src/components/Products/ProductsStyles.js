@@ -29,7 +29,7 @@ export const ContainerCards = styled.div`
 export const Cards = styled.div`
 	width: 200px;
 	min-width: 200px;
-	height: 380px;
+	height: 400px;
 	border-radius: 8px;
 	margin: 20px auto;
 	padding: 16px;
@@ -76,6 +76,7 @@ export const Cards = styled.div`
 
 		&:hover {
 			white-space: normal;
+			font-size: 1rem;
 		}
 	}
 `
@@ -94,5 +95,19 @@ export const ContainerPrice = styled.div`
 	}
 	& p:last-child {
 		color: var(--first-color);
+	}
+`
+
+export const ContainerButtons = styled.div`
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+
+	& button {
+		padding: 5px;
+		margin: 8px 5px 0px 5px;
+		font-size: 1.1rem;
+		color: var(--white-color);
+		cursor: pointer;
 	}
 `

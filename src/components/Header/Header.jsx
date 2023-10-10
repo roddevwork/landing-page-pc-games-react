@@ -48,7 +48,7 @@ const Header = () => {
 							Inicio
 						</NavLink>
 						<NavLink
-							to="/products"
+							to="/productsUs"
 							onClick={handleMenuClick}
 							style={({ isActive }) => (isActive ? activeStyle : undefined)}
 						>

@@ -104,7 +104,7 @@ export const products = [
 		editor: "EA Canada",
 		public: "Electronic Arts",
 		lanzamiento: "30/9/2022",
-		category: ["Simuladores,Deportes,Futbol"],
+		category: ["Simuladores", "Deportes", "Futbol"],
 		description:
 			"Vive la máxima competencia del futbol internacional femenil en EA SPORTS™ FIFA 23 con la FIFA Women’s World Cup Australia and New Zealand 2023™, que estará disponible el 27 de junio sin costo adicional*. Representa los colores de tu país y vive el torneo con la experiencia EA SPORTS™ FIFA Women's World Cup™ más inmersiva hasta el momento, con cada uno de los 32 países clasificados, apariencias personalizadas de los estadios, cinemáticas, presentaciones de partidos, comentarios exclusivos y, por supuesto, el trofeo auténtico en la final.EA SPORTS™ FIFA 23 te trae todo el realismo del Juego de Todos con la FIFA World Cup™ masculina y femenil, equipos de clubes femeniles por primera vez en la historia de la saga, funciones de Cross-Play para que enfrentes fácilmente a tus amistades** y nuevas formas de jugar tus modos favoritos en Xbox One.Juegues como juegues, disfruta del Juego de Todos con más de 19,000 jugadores, más de 700 equipos, más de 100 estadios y más de 30 ligas, incluidas la UEFA Champions League, la Premier League, las nuevas Barclays FA WSL y D1 Arkema de Francia, con un realismo inigualable. Todo en FIFA 23.Este juego incluye compras opcionales de moneda virtual que se puede usar para adquirir artículos virtuales, entre los que se incluye una selección aleatoria de artículos virtuales para el juego.",
 	},
@@ -117,7 +117,7 @@ export const products = [
 		editor: "Playground Games",
 		public: "Xbox Game Studios",
 		lanzamiento: "9/11/2021",
-		category: ["Aventura.Aventura,Carreras,Simuladores,Deportes"],
+		category: ["Aventura", "Carreras", "Simuladores", "Deportes"],
 		description:
 			"Perdido, solo y separado de su familia, un gato callejero debe desentrañar un antiguo misterio para escapar de una ciudad olvidada.Stray es un juego de aventuras de un gato en tercera persona ambientado en los callejones iluminados por el neón de una ciberciudad decadente y sus turbios rincones. Deambula por los alrededores, defiéndete de amenazas imprevistas y resuelve los misterios de este lugar poco acogedor habitado por androides inocentes y criaturas peligrosas.Ve el mundo a través de los ojos de un gato callejero e interactúa con el escenario de formas lúdicas. Sé sigiloso, ágil, tonto y, a veces, lo más molesto que puedas con los extraños habitantes de este mundo extraño.Por el camino, el gato se hará amigo de un pequeño dron volador, conocido como B-12. Con la ayuda de este nuevo compañero, la pareja intentará encontrar una salida.",
 	},
@@ -130,7 +130,7 @@ export const products = [
 		editor: "Frontier Developments",
 		public: "Frontier Developments",
 		lanzamiento: "9/11/2021",
-		category: ["Simuladores,Estrategia"],
+		category: ["Simuladores", "Estrategia"],
 		description:
 			"Jurassic World Evolution 2 es la esperada secuela de Jurassic World Evolution, el innovador simulador de administración de Frontier de 2018. El juego ofrece una nueva campaña narrativa con las voces de los actores de la franquicia de Jurassic World, características nuevas y divertidas, cuatro atractivos modos de juego y una gama ampliada de dinosaurios impresionantes.Una historia original de Jurassic World.Aprende lo que se necesita para ser un experto en administración de parques en modo Campaña, con una narrativa original y emocionante que te pone en el centro de la acción luego de los devastadores eventos de Jurassic World: El reino caído. Trabaja junto con los personajes emblemáticos de las películas, como el Dr. Ian Malcolm (interpretado por Jeff Goldblum en la versión original y doblado en español por Gerardo Reyero) y Claire Dearing (interpretada por Bryce Dallas Howard en la versión original y doblada en español por Xóchitl Ugarte), y encabeza los esfuerzos para controlar, proteger y contener a los dinosaurios salvajes que deambulan a sus anchas por todo Estados Unidos.Crea tu propio Jurassic World ",
 	},
@@ -143,7 +143,7 @@ export const products = [
 		editor: "Codemasters",
 		public: "Codemasters",
 		lanzamiento: "5/11/2020",
-		category: ["Aventura.Aventura,Carreras,Deportes"],
+		category: ["Aventura", "Carreras", "Deportes"],
 		description:
 			"Déjate llevar.Respetando el legado y el ADN de la franquicia, DIRT 5 escribe un nuevo capítulo en la historia de DIRT, el más atrevido y arriesgado hasta el momento. Las nuevas funcionalidades, innovaciones y el original enfoque de DIRT 5 lo convierten en un foco de carreras, estilo y cultura todoterreno donde constantemente crearás instantes inolvidables.Ábrete camino por el mundo.Viaja a través del mundo y compite en más de 70 rutas únicas distribuidas en 10 distintas ubicaciones internacionales, situadas en entornos dinámicos y sensacionales. Compite sobre hielo en el East River de Nueva York, pasa por debajo del Cristo Redentor de Brasil y deslumbra junto a las auroras boreales de Noruega mientras te enfrentas a tus oponentes en extremas y variables condiciones.Supera los límites con increíbles coches.Hay todo un catálogo de diversos y fascinantes vehículos que puedes conducir. Conquista el terreno más adverso con máquinas treparrocas, explora nuevas ubicaciones con iconos del rally o siente la potencia de 900 bhp de los sprint cars. Rallycross, GT, unlimited trucks, buggies y muscle cars completarán el garaje todoterreno definitivo.Protagoniza una historia repleta de estrellas.Bajo la tutela de un icono de las carreras y la mirada de la afición, deberás convertirte en la nueva estrella de este",
 	},

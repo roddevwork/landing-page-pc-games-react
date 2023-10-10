@@ -11,7 +11,7 @@ const Hero = () => {
 							Bienvenido<br></br> a tu sitio de Juegos
 						</h2>
 						<Link to="/products" className="btn">
-							PRODUCTOS
+							DESTACADOS
 						</Link>
 					</div>
 				</aside>
